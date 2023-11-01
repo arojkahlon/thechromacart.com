@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> The Chromacart | Contact </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Online-Store</div>
+          <div class="text-two">Punjab, Firozpur</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">(+91) 99148-03842</div>
+          <div class="text-one">Arojpal Singh Kahlon</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">thechromacart@email.com</div>
+          <div class="text-two">thechromacart@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">The Chromacart-Contact us</div>
+        <p>Fill the following details for sending your address details.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" name="Name" id="name" class="form-control"
+              placeholder="Your Name *" value="" required="" />
+        </div>
+        <div class="input-box">
+          <input type="number" name="Phone" id="phone" class="form-control"
+              placeholder="Your Number *" value="" required="" />
+        </div>
+         <div class="input-box">
+          <input type="number" name="Number" id="number" class="form-control"
+              placeholder="Product Number *" value="" required="" />
+        </div>
+        <div class="input-box">
+          <input type="text" name="Address" id="address" class="form-control"
+              placeholder="Your Address *" value="" required="" />
+      </div>
+      <div class="input-box">
+        <input type="text" name="City" id="city" class="form-control"
+            placeholder=" City *" value="" required="" />
+    </div>
+        <div class="input-box">
+          <input type="text" name="Pincode" id="pincode" class="form-control"
+              placeholder=" Pincode *" value="" required="" />
+      </div>
+      <div class="input-box">
+          <input type="text" name="State" id="state" class="form-control"
+              placeholder="Your State *" value="" required="" />
+        </div>
+        
+        
+        <div class="button">
+          <input type="button" name="submit" class="btnSubmit btn-block" onclick="gotowhatsapp()" value="Submit" />
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function gotowhatsapp() {
+
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var number = document.getElementById("number").value;
+            var address = document.getElementById("address").value;
+            var pincode = document.getElementById("pincode").value;
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            
+
+            var url = "https://wa.me/9914803842?text="
+                + "Name: " + name + "%0a"
+                + "Phone: " + phone + "%0a"
+                + "Number: " + number + "%0a"
+                + "Address: " + address + "%0a"
+                + "Pincode: " + pincode + "%0a"
+                + "City: " + city + "%0a"
+                + "State: " + state;
+                
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+
+</body>
+</html>
